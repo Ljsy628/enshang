@@ -1,9 +1,0 @@
-<import src="../../wxParse/wxParse.wxml" />
-<view class='profile_min'>
-    <view class='profile_pic'>
-        <image src='{{host+intro.thumb}}'></image>
-    </view>
-    <view class='profile_tex'>
-        <template is="wxParse" data="{{wxParseData:parkintro.nodes}}"/>
-    </view>
-</view>
