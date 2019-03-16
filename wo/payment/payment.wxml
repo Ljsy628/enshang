@@ -1,0 +1,13 @@
+<view class='payment_box'>
+
+    <view class='payment' bindtap='payment_detail' wx:for="{{$data}}" wx:key=''>
+        <view class='dian'>●</view>
+        <view class='payment_right'>
+            <view class='pay_info'>
+                <view class='pay_money'>{{item.name}}：<text>{{item.money}}</text>元</view>
+                <view class='pay_state'>已缴</view>
+            </view>
+            <view class='pay_date'>{{item.create_time}}</view>
+        </view>
+    </view>
+</view>

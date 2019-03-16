@@ -1,0 +1,68 @@
+page{
+    font-family: "苹方"
+}
+.property{
+    height: 425rpx;
+    width: 100%;
+}
+.property image{
+    height: 100%;
+    width: 100%;
+}
+.pro_int{
+    height: 176rpx;
+    width: 100%
+}
+.pro_int image{
+    height: 100%;
+    width: 100%
+}
+.pro_int_tex{
+    padding: 0 2%;
+    color: #666666;
+    font-size: 26rpx
+}
+.serve{
+    height: 190rpx;
+    width: 100%;
+}
+.serve image{
+    height: 100%;
+    width: 100%
+}
+.serve_pic{
+    height: 354rpx;
+    width: 100%;
+    margin-bottom: 20rpx
+}
+.serve_pic image{
+    height: 100%;
+    width: 100%
+}
+.serve_project{
+    width: 96%;
+    padding: 2%;
+}
+.serve_top{
+    height: 60rpx;
+    width: 100%;
+    border-bottom: 5px #257FCB solid;
+    position: relative
+}
+.serve_top_name{
+    height: 60rpx;
+    line-height: 62rpx;
+    width: 30%;
+    background: #257FCB;
+    color: #fff;
+    border-radius: 20rpx 0;
+    text-align: center;
+    font-size: 32rpx;
+    position: absolute;
+    margin-top: 7rpx
+}
+.serve_tex{
+    color: #666666;
+    font-size: 26rpx;
+    padding: 20rpx 0
+}

@@ -1,0 +1,65 @@
+<view id='content' bindtap='noedit' class='employeebox' style='height:{{height}}px;width:inherit'>
+</view>
+<view class="zhe {{zhe?'show':'hide'}}"></view>
+<view class='top_box'>
+    <image src='../image/edit.png' bindtap='edit'></image>
+</view>
+<view class='employ'>
+    <view class='employ-top'>
+        <view style="height:8rem;margin-top:1rem">
+            <view class='comleft'>
+                <view class='comlogo'>
+                    <image src='http://ww1.sinaimg.cn/large/a8a5dc63jw1fb7eakfelnj20dw08c0tz.jpg'></image>
+                </view>
+                <view class='comname'>恩尚科技有限公司恩尚科技</view>
+            </view>
+            <view class='comrig'>
+                <view class='comjob'>
+                    <view class='jobpic'>
+                        <image src='../image/name.png' ></image>
+                    </view>
+                    <input type='text' disabled='{{edit}}'></input>
+                </view>
+                <view class='comjob'>
+                    <view class='jobpic'>
+                        <image src='../image/mm.png'></image>
+                    </view>
+                    <input type='text' disabled='{{edit}}'></input>
+                </view>
+                <view class='comjob'>
+                    <view class='jobpic'>
+                        <image src='../image/tel.png' class='jobpic'></image>
+                    </view>
+                    <input type='text' disabled='{{edit}}'></input>
+                </view>
+                <!-- <view class='comjob'>
+                    <view class='jobpic'>
+                        
+                    </view>
+                    <input type='text' disabled='{{edit}}'></input>
+                </view>
+                <view class='comjob'>
+                    <view class='jobpic'>
+                        
+                    </view>
+                    <input type='text' disabled='{{edit}}'></input>
+                </view>
+                <view class='comjob'>
+                    <view class='jobpic'>
+                        
+                    </view>
+                    <input type='text' disabled='{{edit}}'></input>
+                </view> -->
+            </view>
+        </view>
+    </view>
+    <view class='employ-mid'>
+        <textarea class="employ_text" placeholder='我的岗位描述：' disabled='{{edit}}'></textarea>
+    </view>
+    <view class='employ-bot'>
+        <view class='employ_min'>
+            <image src='http://ww4.sinaimg.cn/large/a8a5dc63jw1fb6bvk0zd0j20rs0rs75n.jpg' class='employ_code'></image>
+            <view class='emtext'>长按二维码分享好友</view>
+        </view>
+    </view>
+</view>

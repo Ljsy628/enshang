@@ -1,0 +1,34 @@
+<view class='gray'></view>
+<view class='business_title'>
+    填写信息
+</view>
+<view class='gray'></view>
+<view class='busine_bottom'>
+<form bindsubmit='sure_app'>
+    <view class='busine_min'>
+        <view class='org_name'>公司名称：</view>
+        <view class='org_inp'>
+            <input type='text' name='comname' placeholder='必填'></input>
+        </view>
+    </view>
+    <view class='busine_min'>
+        <view class='org_name'>法人姓名：</view>
+        <view class='org_inp'>
+            <input type='text' name='person' placeholder='必填'></input>
+        </view>
+    </view>
+    <view class='busine_min'>
+        <view class='org_name'>联系电话：</view>
+        <view class='org_inp'>
+            <input type='text' name='tel' placeholder='必填'></input>
+        </view>
+    </view>
+    <view class='busine_min'>
+        <view class='org_name'>咨询时间：</view>
+        <view class='org_inp'>
+            <input type='text' name='time' placeholder='必填'></input>
+        </view>
+    </view>
+    <button class='org_btn' form-type='submit'>确定预约</button>
+</form>
+</view>

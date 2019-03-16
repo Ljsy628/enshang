@@ -1,0 +1,55 @@
+.trade{
+    padding: 40rpx;
+}
+.trade_min{
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 0 2%;
+    width: 96%;
+    border-radius: 5px;
+    border: 1px #eee solid;
+    display: flex;
+    margin-bottom: 20rpx
+}
+.trade_name{
+    width: 30%;
+    font-size: 30rpx;
+    color: #333;
+}
+.trade_inp{
+    width: 80%;
+    height: 50rpx;
+    margin-top: 15rpx;
+    font-size: 28rpx;
+    color: #333
+}
+.trade_min picker{
+    width: 65%
+}
+.trade_btn{
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    width: 100%;
+    margin-top: 50rpx;
+    background: #257fcb;
+    font-size: 28rpx;
+    border-radius: 5px;
+    color: #fff
+}
+.trade_flow{
+    text-align: center;
+    margin-bottom: 30rpx;
+    margin-top: 20rpx
+}
+.down{
+    font-size: 40rpx;
+    color: #666
+}
+.trade-name{
+    padding: 20rpx 0;
+    color: #fff;
+    border-radius: 10rpx;
+    margin: auto;
+    font-size: 30rpx;
+}

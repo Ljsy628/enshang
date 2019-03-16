@@ -1,0 +1,107 @@
+.org_box{
+    height: 100%;
+    width: 100%
+}
+.gray{
+    height: 20rpx;
+    width: 100%;
+    background: #e6e6e6
+}
+.org_top{
+    height: 300rpx;
+    width: 100%;
+}
+.org_menu{
+    height: 80rpx;
+    line-height: 100rpx;
+    color: #666;
+    font-size: 30rpx;
+    padding: 2%
+}
+.org_cho{
+    height: 60rpx;
+    width: 96%;
+    padding: 2%;
+    border-top: 1px #eee solid
+}
+.org_name{
+    height: 60rpx;
+    line-height: 60rpx;
+    float: left;
+    width: 25%;
+    font-size: 30rpx
+}
+.org_inp{
+    height: 60rpx;
+    float: right;
+    width: 75%;
+}
+.org_inp input{
+    height: 60rpx;
+    width: 100%;
+    font-size: 30rpx;
+    line-height: 60rpx
+}
+.org_btn{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 80%;
+    background-color: #257FCB;
+    color: #fff;
+    font-size: 35rpx;
+    height:3rem;
+    line-height:3rem;
+}
+.org_inp image{
+    height: 60rpx;
+    width: 60rpx;
+    border-radius: 100%
+}
+/* 性别单选 */
+radio{
+    width: 38rpx;
+    
+}
+radio .wx-radio-input{
+    border-radius: 50%; 
+    width: 28rpx;
+    height: 28rpx;
+}
+ 
+/* 选中后的样式 （可根据设计稿需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+    border-radius: 50%;
+    width: 44rpx; 
+    height: 44rpx; 
+    line-height: 44rpx;
+    text-align: center;
+    font-size: 26rpx; /* 对勾大小 26rpx */
+    color:#fff; /* 对勾颜色 */
+    background: #257fcb;
+    border-color: #257fcb;
+}
+.org_toux{
+    height: 200rpx;
+    line-height: 200rpx;
+    width: 96%;
+    padding: 0 2%;
+    border-top: 1px #eee solid
+}
+.org_pic{
+    width: 50%;
+    float: left;
+    height: 200rpx;
+}
+.org_pic image{
+    height: 150rpx;
+    width: 150rpx;
+    margin-top: 25rpx;
+    border-radius: 100%
+}
+.org_names{
+    height: 200rpx;
+    line-height: 200rpx;
+    float: left;
+    width: 25%;
+    font-size: 30rpx
+}

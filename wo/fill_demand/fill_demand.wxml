@@ -1,0 +1,23 @@
+<form bindsubmit='sure_demand'>
+    <view class='filldemand'>
+        <view class='filldemand_min'>
+            <view class='fill_name'>企业名称：</view>
+            <view class='fill_inp'>
+                <input type='text' name='comname'></input>
+            </view>
+        </view>
+        <view class='filldemand_min'>
+            <view class='fill_name'>联系电话：</view>
+            <view class='fill_inp'>
+                <input type='number' name='tel' onkeyup="this.value=this.value.replace(/[^\d]/g,'') " maxlength="15"></input>
+            </view>
+        </view>
+        <view class='filldemand_mins'>
+            <view class='fill_name' style='display:inline-block'>需求详情：</view>
+            <textarea class='fill_tex' rows='2' cols='20' name='needetail' bindinput='getContent'></textarea>
+        </view>
+        <button class='demand_btn' form-type='submit'>
+            确认发布
+        </button>
+    </view>
+</form>

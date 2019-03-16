@@ -1,0 +1,44 @@
+ <view class='enter_certif'>
+        <view class='certif_top'>商家企业认证</view>
+        <view class='certif_pic'>
+            <view class="certif_imagea">
+                <text class="{{tempTexts?'show':'hide'}}">营业执照正面</text>
+                <button class='cer_picbtn' style='padding:0' type="primary" bindtap="chooseimage_a">
+                    <image class='certif_picture' src="{{tempFilePatha}}" mode="aspecFill"/>
+                </button> 
+            </view>
+            <view class="certif_imagea" style='margin-left:10%'>
+                <text class="{{tempTexts?'show':'hide'}}" >营业执照背面</text>
+                <button class='cer_picbtns' type="primary" style='padding:0;margin-left:0!important' bindtap="chooseimage_b">
+                    <image class='certif_pictures' src="{{tempFilePathb}}" mode="aspecFill" />
+                </button> 
+                
+            </view> 
+        </view>
+    </view>
+    <view class='enter_person'>
+        <view class='certif_top'>身份证信息</view>
+        <view class='certif_pic'>
+            <view class="certif_imagea" style='margin-top:5%;'>
+                <text class="{{tempTexts?'show':'hide'}}">身份证人像面</text>
+                <button class='cer_picbtn' style='padding:0' type="primary" bindtap="chooseimage_c">
+                    <image class='certif_picture' src="{{tempFilePathc}}" mode="aspecFill"/>
+                </button> 
+                
+            </view>
+            <view class="certif_imagea" style='margin-top:4%'>
+                <text class="{{tempTexts?'show':'hide'}}" style='margin-left:47%;'>身份证国徽面</text>
+                <button class='cer_picbtns' style='padding:0' type="primary" bindtap="chooseimage_d">
+                    <image class='certif_pictures' src="{{tempFilePathd}}" mode="aspecFill"/>
+                </button> 
+            </view> 
+        </view>
+        <view class='prompt'>
+            <view>温馨提示</view>
+            <view>1.为保证您的认证顺利，请保证信息清晰可见。</view>
+            <view>2.此证件信息，只作为商家入驻商家入驻申请认证，请放心上传。</view>
+        </view>
+        <view class='basic_infos'>
+            <button class='apply_basic_btn' bindtap='commform'>申请入驻</button>
+        </view>
+    </view>

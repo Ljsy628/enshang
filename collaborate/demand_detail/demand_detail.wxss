@@ -1,0 +1,61 @@
+.need_top{
+    height: 100rpx;
+    width: 92%;
+    padding: 20rpx 4%;
+}
+.need_com{
+    font-size: 34rpx;
+    color: #257fcb
+}
+.need_box{
+    margin-top: 10rpx
+}
+.need_name{
+    display: inline-block;
+    width: 60%;
+    font-size: 34rpx;
+    color: #333;
+    font-weight: bold
+}
+.need_time{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    font-size: 24rpx;
+    color: #999;
+}
+.gray{
+    height: 20rpx;
+    width: 100%;
+    background: #e6e6e6
+}
+.need_option{
+    padding: 20rpx;
+}
+.need_min{
+    padding: 20rpx 0;
+    font-size: 26rpx;
+    width: 100%;
+    border-bottom: 1px #eee solid
+}
+.need_tel{
+    font-size: 26rpx;
+    font-weight: bold;
+    width: 30%;
+    margin-left: 20rpx
+}
+.need_detail{
+    margin-top: 30rpx;
+    color: #666;
+    padding: 0 20rpx
+}
+.call{
+    width: 96%;
+    height:3rem;
+    margin-left: 2%;
+    line-height:3rem;
+    background-color: #257FCB;
+    color: #fff;
+    font-size: 35rpx;
+    margin-top: 10%
+}

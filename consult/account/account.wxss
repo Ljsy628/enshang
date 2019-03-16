@@ -1,0 +1,56 @@
+/* 代理记账 */
+.business_title{
+    width: 96%;
+    padding: 2%;
+    background: #fff;
+    font-size: 30rpx;
+    font-weight: bold;
+    color: #333
+}
+.bus_bottom{
+    width: 100%;
+}
+.busine_min{
+    height: 60rpx;
+    width: 92%;
+    padding:  2% 4%;
+    border-bottom: 1px #eee solid
+}
+
+.org_name{
+    height: 60rpx;
+    line-height: 60rpx;
+    float: left;
+    width: 25%;
+    font-size: 30rpx
+}
+.org_inp{
+    height: 60rpx;
+    float: right;
+    width: 75%;
+    line-height: 60rpx
+}
+.org_inp input{
+    height: 60rpx;
+    width: 100%;
+    font-size: 30rpx;
+    line-height: 60rpx
+}
+.org_btn{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15%;
+    background-color: #257FCB;
+    color: #fff;
+    font-size: 35rpx;
+    height:3rem;
+    line-height:3rem;
+}
+.gray{
+    height: 20rpx;
+    background: #e6e6e6
+}
+.picker{
+    color: #257FCB;
+    font-size: 26rpx;
+}

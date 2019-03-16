@@ -1,0 +1,82 @@
+<view class='box' style='height:{{boxHeight}}px;'>
+    <view class='con_min' style="background-image: url('http://ww4.sinaimg.cn/large/a8a5dc63jw1fb5318481kj20f00b9taz.jpg'); background-size: 100% 100%;height:{{minsHeight}}" bindtap='business_tax'>
+    <view style='width:100%'>
+        <view class='con_name'>
+            工商财税
+        </view>
+        <view class='con_btn'>
+            点击进入
+        </view>
+    </view>
+    </view>
+    <view class='con_min' style="background-image: url('http://ww4.sinaimg.cn/large/a8a5dc63jw1fb5318481kj20f00b9taz.jpg'); background-size: 100% 100%;height:{{minsHeight}}" bindtap='intellectual'>
+        <view style='width:100%'>
+            <view class='con_name'>
+                知识产权
+            </view>
+            <view class='con_btn'>
+                点击进入
+            </view>
+        </view>
+    </view>
+    <view class='con_min' style="background-image: url('http://ww4.sinaimg.cn/large/a8a5dc63jw1fb5318481kj20f00b9taz.jpg'); background-size: 100% 100%;height:{{minsHeight}}" bindtap='promote'>
+        <view style='width:100%'>
+            <view class='con_name'>
+                政策推广
+            </view>
+            <view class='con_btn'>
+                点击进入
+            </view>
+        </view>
+    </view>
+    <view class='con_min' style="background-image: url('http://ww4.sinaimg.cn/large/a8a5dc63jw1fb5318481kj20f00b9taz.jpg'); background-size: 100% 100%;height:{{minsHeight}}" bindtap='technologys'>
+        <view style='width:100%'>
+            <view class='con_name'>
+                科技服务
+            </view>
+            <view class='con_btn'>
+                点击进入
+            </view>
+        </view>
+    </view>
+    <view class='con_min' style="background-image: url('http://ww4.sinaimg.cn/large/a8a5dc63jw1fb5318481kj20f00b9taz.jpg'); background-size: 100% 100%;height:{{minsHeight}}" bindtap='transfer'>
+        <view style='width:100%'>
+            <view class='con_name'>
+                技术转移
+            </view>
+            <view class='con_btn'>
+                点击进入
+            </view>
+        </view>
+    </view>
+    <view class='con_min' style="background-image: url('http://ww4.sinaimg.cn/large/a8a5dc63jw1fb5318481kj20f00b9taz.jpg'); background-size: 100% 100%;height:{{minsHeight}}" bindtap='exhibition'>
+        <view style='width:100%'>
+            <view class='con_name'>
+                培训会展
+            </view>
+            <view class='con_btn'>
+                点击进入
+            </view>
+        </view>
+    </view>
+    <view class='con_min' style="background-image: url('http://ww4.sinaimg.cn/large/a8a5dc63jw1fb5318481kj20f00b9taz.jpg'); background-size: 100% 100%;height:{{minsHeight}}" bindtap='financial'>
+        <view style='width:100%'>
+            <view class='con_name'>
+                金融服务
+            </view>
+            <view class='con_btn'>
+                点击进入
+            </view>
+        </view>
+    </view>
+    <view class='con_min' style="background-image: url('http://ww4.sinaimg.cn/large/a8a5dc63jw1fb5318481kj20f00b9taz.jpg'); background-size: 100% 100%;height:{{minsHeight}}" bindtap='cooperation'>
+        <view style='width:100%'>
+            <view class='con_name'>
+                国际合作
+            </view>
+            <view class='con_btn'>
+                点击进入
+            </view>
+        </view>
+    </view>
+</view>

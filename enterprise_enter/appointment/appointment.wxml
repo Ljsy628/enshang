@@ -1,0 +1,39 @@
+<view class='yuyue'>
+<!-- 编号 -->
+    <view class='number'>
+        填写房源编号：<text>6D06</text>预约信息
+    </view>
+    <view class='app_info'>
+        <view class='app_name'><text decode="{{true}}">业主姓名</text><text>：</text></view>
+        <view class='app_inp'>
+            <input placeholder='必填'></input>
+        </view>
+    </view>
+    <view class='app_info'>
+        <view class='app_name'><text decode="{{true}}">业主电话</text>：</view>
+        <view class='app_inp'>
+            <input placeholder='必填'></input>
+        </view>
+    </view>
+    <view class='app_info'>
+        <view class='app_name'>参观时间：</view>
+        <view class='app_inp'>
+            <input placeholder='必填'></input>
+        </view>
+    </view>
+    <view class='app_info'>
+        <view class='app_name'>办公面积：</view>
+        <view class='app_inp'>
+            <input placeholder='必填'></input>
+        </view>
+    </view>
+    <view class='app_info'>
+        <view class='app_name'>所属行业：</view>
+        <view class='app_inp'>
+            <input placeholder='必填'></input>
+        </view>
+    </view>
+    <view>
+        <button class='sure_app'>确定预约</button>
+    </view>
+</view>

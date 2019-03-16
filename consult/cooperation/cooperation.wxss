@@ -1,0 +1,208 @@
+.box{
+    height: 100%;
+    width: 100%
+}
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    line-height: 100rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.swiper-tab-item{
+    height: 100%;
+    line-height: 60rpx;
+    margin-top: 30rpx;
+    width: 25%;
+    color: #666666;
+    font-size: 30rpx
+}
+.active{
+    color:#2670cb;
+    border-bottom: 7rpx solid #2670cb;
+    width: 30%;
+    margin: auto;
+    border-radius:5px;
+}
+.actives{
+    color:#2670cb; 
+}
+swiper{
+    width: 100%;
+    margin: 0 auto;
+    height: 100vw;
+}
+
+swiper-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gray{
+    height: 20rpx;
+    background: #e6e6e6;
+    margin-top: 20rpx
+}
+.scroll_news ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.nation{
+    height: 350rpx;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10rpx;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    margin-bottom: 20rpx;
+    position: relative;
+    z-index: 1;
+    margin-top: 10rpx
+}
+.nation image{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1
+}
+.pp{
+    position: absolute;
+    z-index: 2
+}
+.nat_top{
+    height: 120rpx;
+    line-height: 150rpx;
+    text-align: center
+}
+.nat_bot{
+    text-align: left;
+    padding: 20rpx;
+    font-size: 30rpx;
+    line-height: 42rpx
+}
+.talents{
+    height: 260rpx;
+    width: 96%;
+    padding: 2%;
+    display: flex;
+    border-bottom: 1px #eee solid
+}
+.tal_left{
+    width: 30%;
+    display: inline-block;
+}
+.tal_left image{
+    height: 180rpx;
+    width: 180rpx;
+    margin-top: 40rpx;
+    border-radius: 100%;
+} 
+.tal_rig{
+    height: 230rpx;
+    margin-top: 25;
+    margin-left: 5%;
+    display: inline-block;
+}
+.xian{
+    height: 6rpx;
+    width: 60rpx;
+    border-radius: 5rpx;
+    margin-top: 10rpx;
+    margin-bottom: 20rpx;
+    background: #257FCB 
+}
+.tal_name{
+    font-size: 30rpx;
+    color: #333
+}
+.tal_year{
+    font-size: 25rpx;
+    color: #999;
+    margin-left: 50rpx
+}
+.per_tex{
+    height: 169rpx;
+    font-size: 24rpx;
+    line-height: 36rpx;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: wrap;
+}
+.share{
+    height: 200rpx;
+    width: 100%;
+    padding: 2%;
+    background: #fff;
+    margin-bottom: 20rpx;
+    display: flex
+}
+.share_left{
+    height: 100%;
+    width: 120px;
+}
+.share_left image{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px
+}
+.share_right{
+    height: 100%;
+    width: 55%;
+    margin-left: 5%;
+}
+.share_right_top{
+    width: 100%;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+share_right_tops{
+    width: 100%;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.share_right_middle{
+    height: 100rpx;
+    width: 100%;
+    font-size:25rpx;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: wrap;
+}
+.share_detail{
+    height: 40rpx;
+    line-height: 40rpx;
+    width: 120rpx;
+    border:1px #257FCB solid;
+    text-align: center;
+    border-radius: 20px;
+    color: #257FCB;
+    font-size: 25rpx;
+}
+.introduce{
+    height: 130rpx;
+    width: 100%;
+    font-size:24rpx;
+    line-height: 36rpx;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: wrap;
+    margin-top: 20rpx
+}
+.export{
+    width: 96%;
+    padding: 4% 2%;
+    border-bottom:1px #eee solid
+}
+.extop{
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 33rpx;
+    font-weight: bold
+}
+.ext_tex{
+    font-size: 30rpx;
+    color: #999
+}

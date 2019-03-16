@@ -1,0 +1,67 @@
+<view class='mine'>
+    <view class='mine_top'>
+        <view class='person_toux'>
+            <image src='{{userinfo.img}}'></image>
+        </view>
+        <view class='person_name'>
+            <view class='person_a'>{{userinfo.nickname}}</view>
+        </view>
+    </view>
+    <view class='gray'></view>
+    <view class='mine_bottom'>
+        <view class='mine_min' bindtap='organization'>
+            <view class='mine_pic'>
+                <image src='../image/a.jpg'></image>
+            </view>
+            <view class='mine_cho'>个人信息</view>
+            <view class='mine_go'>
+                <image src='../image/8.jpg'></image>
+            </view>
+        </view>
+        <view class='mine_min' bindtap='demand'>
+            <view class='mine_pic'>
+                <image src='../image/2.jpg'></image>
+            </view>
+            <view class='mine_cho'>发布需求</view>
+            <view class='mine_go'>
+                <image src='../image/8.jpg'></image>
+            </view>
+        </view>
+        <view class='mine_min' bindtap='payment'>
+            <view class='mine_pic'>
+                <image src='../image/3.jpg'></image>
+            </view>
+            <view class='mine_cho'>缴费记录</view>
+            <view class='mine_go'>
+                <image src='../image/8.jpg'></image>
+            </view>
+        </view>
+        <view class='mine_min' bindtap='reservation'>
+            <view class='mine_pic'>
+                <image src='../image/4.jpg'></image>
+            </view>
+            <view class='mine_cho'>预约记录</view>
+            <view class='mine_go'>
+                <image src='../image/8.jpg'></image>
+            </view>
+        </view>
+        <view class='mine_min' bindtap='intellectual'>
+            <view class='mine_pic'>
+                <image src='../image/5.jpg'></image>
+            </view>
+            <view class='mine_cho'>知识产权</view>
+            <view class='mine_go'>
+                <image src='../image/8.jpg'></image>
+            </view>
+        </view>
+        <view class='mine_min' bindtap='cardcase'>
+            <view class='mine_pic'>
+                <image src='../image/6.jpg'></image>
+            </view>
+            <view class='mine_cho'>名片</view>
+            <view class='mine_go'>
+                <image src='../image/8.jpg'></image>
+            </view>
+        </view>
+    </view>
+</view>

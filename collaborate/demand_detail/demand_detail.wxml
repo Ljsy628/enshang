@@ -1,0 +1,20 @@
+<view class='need_top'>
+    <view class='need_box'>
+        <view class='need_name'>{{needetail.company_name}}</view>
+        <view class='need_time'>
+        发布时间：<text>{{needetail.create_time}}</text>
+        </view>
+    </view>
+</view>
+<view class='gray'></view>
+<view class='need_option'>
+    <view class='need_min'>
+        <view class='need_tel'>联系电话：</view>
+        <view class='need_detail'>{{needetail.tel}}</view>
+    </view>
+    <view class='need_min'>
+        <view class='need_tel'>需求详情：</view>
+        <view class='need_detail'>{{needetail.content}}</view>
+    </view>
+    <button class='call'  bindtap='phoneCall'>立即联系</button>
+</view>

@@ -1,0 +1,30 @@
+<view class='box'>
+    <view class='fee'>
+        <view class='fee_name'><text>恩尚科技有限公司</text>(<text>郑州</text>)</view>
+        <view class='fee_num'>-<text>99999</text>元</view>
+        <view class='feets'>缴费成功</view>
+    </view>
+    <view class='fee_bottom'>
+        <view class='fee_min'>
+            <view class='fee_cho'>付款方式</view>
+            <view class='fee_info'>微信</view>
+        </view>
+        <view class='fee_min'>
+            <view class='fee_cho'>缴费说明</view>
+            <view class='fee_info'>电费-公司</view>
+        </view>
+        <view class='fee_min'>
+            <view class='fee_cho'>户号</view>
+            <view class='fee_info'>6666</view>
+        </view>
+        <view class='fee_min'>
+            <view class='fee_cho'>创建时间</view>
+            <view class='fee_info'><text>2018-11-14</text><text style='margin-left:20rpx'>16:12</text></view>
+        </view>
+        <view class='fee_min'>
+            <view class='fee_cho'>订单号</view>
+            <view class='fee_info'>66666666666666666666666666</view>
+        </view>
+    </view>
+
+</view>

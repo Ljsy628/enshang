@@ -1,0 +1,5 @@
+<view class='box'>
+    <view class='detail_til'>技术需求详情</view>
+    <view class='detail_tex'>ofijeyh</view>
+    <button class='demand_btn'>申请</button>
+</view>

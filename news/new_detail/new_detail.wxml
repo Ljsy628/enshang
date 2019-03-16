@@ -1,0 +1,17 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class='new_box'>
+    <view class='new_headline'>
+        <view class='new_name'>{{newdetail.title}}</view>
+        <view class='new_time'>
+            <view class='date'>
+                发布时间：<text>{{newdetail.create_time}}</text>
+            </view>
+            <view class='people'>
+                <text class='peo_num'>{{newdetail.num}}</text>人浏览
+            </view>
+        </view>
+    </view>
+    <view class='new_body'>
+        <template is="wxParse" data="{{wxParseData:newdetails.nodes}}"/>
+    </view>
+</view>

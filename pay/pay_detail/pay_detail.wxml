@@ -1,0 +1,50 @@
+<view class='big_box'>
+    
+   
+   
+    <view class='pay_min'>
+        <view class='pay_name'>费用类型：</view>
+        <view class='name_inp'>
+            <view class="row-wrap">
+                <picker bindchange="bindCasPickerChange" range="{{costType}}">
+                    <view>
+                        <text style='color:#257fcb'>{{costType[casIndex]}}</text>
+                    </view>
+                </picker>
+            </view> 
+        </view>
+    </view>
+
+     <view class='pay_min'>
+        <view class='pay_name'>缴费月数：</view>
+        <view class='name_inp'>
+            <view class="row-wrap">
+                <picker bindchange="bindTypePickerChange" range="{{casArray}}">
+                    <view>
+                        <text style='color:#257fcb'>{{casArray[typeIndex]}}</text>
+                    </view>
+                </picker>
+            </view> 
+        </view>
+    </view>
+<view class='pay_min' style='border:0'>
+    <view class='pay_name' style='width:100%'>请选择金额：</view>
+</view>
+<view>
+  <view class='choose_money'>
+        <view class="money_view {{$index == 0 ? 'checked_price':''}}" bindtap='choose_price' data-money="0.01" data-index="0">0.01元</view>
+        <view class="money_view {{$index == 1 ? 'checked_price':''}}" bindtap='choose_price' data-money="20" data-index="1">20元</view>
+        <view class="money_view {{$index == 2 ? 'checked_price':''}}" bindtap='choose_price' data-money="50" data-index="2">50元</view>
+        <view class="money_view {{$index == 3 ? 'checked_price':''}}" bindtap='choose_price' data-money="100" data-index="3">100元</view>
+        <view class="money_view {{$index == 4 ? 'checked_price':''}}" bindtap='choose_price' data-money="200" data-index="4">200元</view>
+        <view class="money_view {{$index == 5 ? 'checked_price':''}}" bindtap='choose_price' data-money="500" data-index="5">500元</view>
+        <view class="money_view {{$index == 6 ? 'checked_price':''}}" bindtap='choose_price' data-money="1000" data-index="6">1000元</view>
+        <view class="money_view {{$index == 7 ? 'checked_price':''}}" bindtap='choose_price' data-type="1" data-money="{{$custui}}" data-index="7">
+        {{$index == 7 ? '':'其他'}}
+        <input type='number' data-index="7" bindinput='focusPirce'  style="display:{{$index != 7 ? 'none':'block'}};line-height:40rpx;height:inherit"></input>
+        </view>
+    </view>
+</view>
+
+    <button class='pay_btn' bindtap='online_pay'>确定缴费</button>
+</view>

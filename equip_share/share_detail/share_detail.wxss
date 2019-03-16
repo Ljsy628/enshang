@@ -1,0 +1,192 @@
+page{
+    color: #333
+}
+.swiper {
+    height: 400rpx;
+    width: 100%;
+}
+.swiper-image {
+    height: 100%;
+    width: 100%;
+}
+.slide-image{
+    height: 100%;
+    width: 100%;
+}
+.equ_data{
+    width: 96%;
+    padding: 2%;
+    font-size: 30rpx;
+}
+.data_top{
+    width: 100%;
+    display: flex;
+    vertical-align: bottom;
+    margin-top: 5%;
+   
+}
+.top_name{
+    width: 73%;
+    font-size: 30rpx;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+.top_price{
+    width: 25%;
+    text-align: right;
+    font-size: 26rpx;
+    color: #Ec6c6c;
+    display: inline-block;
+    margin-top: -2rpx
+}
+.top_price text{
+    font-size: 35rpx;
+}
+.tex_number{
+    font-size: 19px;
+}
+.invent{
+    width: 26%;
+    text-align: right;
+    display: inline-block;
+    font-size: 26rpx;
+    color: #666;
+    margin-left: 10rpx;
+    margin-top: 6rpx
+}
+.data_middle{
+    margin-top: 5%;
+    font-size: 30rpx;
+    color: #666
+}
+.data_bottom{
+    height: 6rem;
+    width: 96%;
+    margin-top: 15%
+}
+.bottom_shop{
+    height: 2.5rem;
+    line-height: 2.5rem;
+    display: inline-flex;
+    border-top: 1px #eee solid;
+    border-bottom: 1px #eee solid;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.price_tex{
+    font-size: 26rpx;
+    color: #Ec6c6c;
+}
+.bottom_price{
+    display: flex;
+    font-size: 16px;
+    width: 50%
+}
+.shop_num{
+    width: 50%;
+   
+}
+.price_a{
+    display: inline-block
+}
+.price_tex{
+    display: inline-block
+}
+
+.bottom_btn{
+    width: 96%;
+    height:90rpx;
+    line-height:90rpx; 
+    background-color: #257FCB;
+    color: #fff;
+    font-size: 35rpx;
+    margin-bottom: 1%
+}
+.shop_num{
+    display: flex
+}
+.shop_reduce{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: .5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-left: .5rem;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #999;
+    background: #ccc;
+    display: inline-block
+}
+.shop_int{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: .5rem;
+    line-height: 1.5rem;
+    margin-left: .5rem;
+    border-radius: 3px;
+    text-align: center;
+    background: #ccc;
+    display: inline-block
+}
+.shop_add{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: .5rem;
+    line-height: 1.5rem;
+    margin-top: .5rem;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #999;
+    text-align: center;
+    background: #ccc;
+    display: inline-block
+}
+.deadline{
+    height: 100rpx;
+    width: 100%;
+    margin-bottom: 20rpx;
+}
+.page__hd{
+ padding: 50rpx 50rpx 100rpx 50rpx;
+ text-align: center;
+}
+.page__title{
+ display: inline-block;
+ padding: 20rpx 40rpx;
+ font-size: 32rpx;
+ color: #AAAAAA;
+ border-bottom: 1px solid #CCCCCC;
+}
+.page__desc{
+ display: none;
+ margin-top: 20rpx;
+ font-size: 26rpx;
+ color: #BBBBBB;
+}
+
+/* 期限选择 */
+.section{
+ margin-bottom: 80rpx;
+ width: 50%;
+ float: left;
+ font-size: 26rpx
+}
+.section__title{
+ margin-bottom: 16rpx;
+ padding-left: 30rpx;
+ padding-right: 30rpx;
+}
+.picker{
+ padding: 26rpx;
+ background-color: #FFFFFF;
+}
+.lant{
+    height: 10rpx;
+    width: 60rpx;
+    border-radius: 5px;
+    background: #257FCB;
+}

@@ -1,0 +1,54 @@
+page{
+    overflow: hidden;  
+}
+.box{
+    margin-top: 25rpx;
+}
+ .top{
+    display: flex;
+}
+.top_min{
+    text-align: center
+}
+.top_mina{
+    background: #507bc9;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    align-items:center;
+    display: flex
+}
+.top_mina image{
+   height: 131rpx;
+    width: 142rpx;
+}
+.top_mind{
+    background: #50c2c9;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    align-items:center;
+    display: flex
+}
+.top_mind image{
+    height: 131rpx;
+    width: 142rpx;
+}
+.brand{
+    border-radius: 5px;
+    color: #fff;
+    font-size: 30rpx;
+    font-weight: bold;
+    align-items:center;
+    display: flex
+}
+.brand image{
+    height: 131rpx;
+    width: 142rpx;
+}  
+.ss{
+    height: 180rpx;
+    align-items:center;
+    margin: 0 auto
+}
+

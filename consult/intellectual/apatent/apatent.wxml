@@ -1,0 +1,12 @@
+<view class='patent'>
+    <view class='patent_min' wx:for='{{patent}}' wx:key=''>
+        <view class='patent_top'>
+            <image src='../../image/lan.jpg'></image>
+            <view class='patent_tex'>{{item.name}}</view>
+        </view>
+        <view class='apatent-flow'>
+            {{item.content}}
+        </view>
+        <view class='apatent-btn' bindtap='apatent'>申请</view>
+    </view>
+</view>

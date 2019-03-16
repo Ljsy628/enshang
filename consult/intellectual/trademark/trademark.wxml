@@ -1,0 +1,42 @@
+<view class='trademark_box'>
+    <view class='mark_min' wx:for="{{transferList}}" wx:key="">
+        <view class='markTop'>
+<image src='{{host+item.thumb}}'></image>
+        </view>
+        <view class='markinfo'>
+            <view class='markname'>商标ID：</view>
+            <view style='color: #de6249'>{{item.brand_coding}}</view>
+        </view>
+        <view class='markinfo'>
+            <view class='markname'>商标分类：</view>
+            <view>{{item.brand}}</view>
+        </view>
+        <view class='markinfo'>
+            <view class='markname'>适用项目：</view>
+            <view class='commerce'>
+                <view>{{item.brand_content}}</view>
+            </view>
+        </view>
+        <view class='markinfo'>
+            <view class='markname'>所属群组：</view>
+            <view>{{item.brand_cluster}}</view>
+        </view>
+        <view class='markinfo'>
+            <view class='markname'>组合类型：</view>
+            <view>{{item.brand_group}}</view>
+        </view>
+        <view class='markinfo'>
+            <view class='markname'>交易金额：</view>
+            <view>{{item.brand_money}}</view>
+        </view>
+        <view class='markinfo'>
+            <view class='markname'>有效期限：</view>
+            <view><text>{{item.create_time}}</text>至<text>{{item.update_time}}</text></view>
+        </view>
+        <view class='markinfo'>
+            <view class='markname'>交易类型：</view>
+            <view>转让</view>
+        </view>
+        <button class='markbtn'>立即申请</button>
+    </view>
+</view>

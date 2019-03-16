@@ -1,0 +1,21 @@
+<view class='property'>
+    <image src='{{host+property.thumb}}'></image>
+</view>
+<view class='pro_int'>
+    <image src='../image/8.jpg'></image>
+</view>
+<view class='pro_int_tex'>{{property.content}}</view>
+<view class='serve'>
+    <image src='../image/9.jpg'></image>
+</view>
+
+<view class='serve_project' wx:for="{{article}}" wx:key="">
+    <view class='serve_pic'>
+        <image src='{{host+item.thumb}}'></image>
+    </view>
+    <view class='serve_top'>
+        <view class='serve_top_name'>{{item.name}}</view>
+    </view>
+    <view class='serve_tex'>{{item.content}}</view>
+</view>
+

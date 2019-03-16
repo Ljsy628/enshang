@@ -1,0 +1,44 @@
+page{
+    background: #f5f5f5
+}
+.patent_min{
+    width: 92%;
+    margin-bottom: 20rpx;
+    background: #fff;
+    padding: .8rem 4%
+}
+.patent_top{
+    height: 70rpx;
+    line-height: 70rpx;
+    width: 100%;
+    position: relative
+}
+.patent_top image{
+    height: inherit;
+    width: 60%;
+    z-index: 1;
+    position: absolute
+}
+.patent_tex{
+    position: absolute;
+    z-index: 2;
+    font-size: 30rpx;
+    color: #fff;
+    padding-left: 20rpx
+}
+.apatent-flow{
+    color: #888;
+    padding-top: 20rpx;
+    font-size: 28rpx
+}
+.apatent-btn{
+    width: 100%;
+    margin-top: 10%;
+    background-color: #257FCB;
+    color: #fff;
+    font-size: 35rpx;
+    height:90rpx;
+    line-height:90rpx;
+    text-align: center;
+    border-radius: 5px;
+}

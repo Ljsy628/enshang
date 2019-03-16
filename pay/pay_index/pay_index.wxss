@@ -1,0 +1,22 @@
+.pay_min{
+    height: 70rpx;
+    line-height: 70rpx;
+    width: 96%;
+    padding: 2%;
+    border-bottom: 1px #eee solid;
+    font-size: 32rpx;
+    color: #666;
+    display: flex
+}
+.pay_name{
+    width: 90%;
+    float: left
+}
+.right{
+    width: 5%;
+}
+.right image{
+    height: 50rpx;
+    width: 50rpx;
+    margin-top: 10rpx
+}

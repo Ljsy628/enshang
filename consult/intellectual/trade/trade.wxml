@@ -1,0 +1,55 @@
+<!-- <view class='trade'>
+    <form bindsubmit='register'>
+        <view class='trade_min'>
+            <view class='trade_name'>商标名称：</view>
+            <input class='trade_inp' name='name'></input>
+        </view>
+        <view class='trade_min'>
+            <view class='trade_name'>所属行业：</view>
+            <picker bindchange="bindCasPickerChange" range='{{casArray}}' range-key=''>
+                <view>
+                    <text style='color:#257fcb;font-size:30rpx'>{{casArray[casIndex]}}</text>
+                </view>
+            </picker>
+        </view>
+        <view class='trade_min'>
+            <view class='trade_name'>联系人：</view>
+            <input class='trade_inp' name='person'></input>
+        </view>
+        <view class='trade_min'>
+            <view class='trade_name'>商标类目：</view>
+            <picker bindchange="categoryChange" range='{{categoryList}}' range-key=''>
+                <view>
+                    <text style='color:#257fcb;font-size:30rpx'>{{categoryList[categoryIndex]}}</text>
+                </view>
+            </picker>
+        </view>
+        <view class='trade_min'>
+            <view class='trade_name'>联系电话：</view>
+            <input class='trade_inp' name='tel'></input>
+        </view>
+        <button class='trade_btn' form-type='submit'>申请</button>
+    </form>   
+</view>  -->
+
+
+
+<view class='trade_flow' >
+        <view style='font-size:30rpx'>注册流程</view>
+        <view class="down">↓</view>
+        <view class='trade-name' style='background: #ed6d00;width:45%'>商标查询（2天内）</view>
+        <view class="down">↓</view>
+        <view class='trade-name' style='background: #019fa8;width:50%'>申请文件准备（3天内)</view>
+        <view class="down">↓</view>
+        <view class='trade-name' style='background: #a70485;width:45%'>提交申请（2天内）</view>
+        <view class="down">↓</view>
+        <view class='trade-name' style='background: #14a73c;width:45%'>缴纳商标注册费用</view>
+        <view class="down">↓</view>
+        <view class='trade-name' style='background: #019fa8;width:90%'>商标形式审查下发商标受理通知书(1天内)</view>
+        <view class="down">↓</view>
+        <view class='trade-name' style='background: #ed6d00;width:50%'>商标实质审查(12个月）</view>
+        <view class="down">↓</view>
+        <view class='trade-name' style='background: #abcd05;width:45%'>商标公告（3个月）</view>
+        <view class="down">↓</view>
+        <view class='trade-name' style='background: #257fcb;width:80%'>颁发商标证书(总共14-18个月左右）</view>
+</view>

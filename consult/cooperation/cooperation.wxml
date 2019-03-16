@@ -1,0 +1,75 @@
+<view class='box'>
+<view style='height:150rpx'>
+    <view class="swiper-tab">
+        <!-- <view class="swiper-tab-item {{currentTab==0?'actives':''}}" data-current="0" bindtap="clickTab">国际对接
+            <view class="nn {{currentTab==0?'active':''}}"></view>
+        </view> -->
+        <view class="swiper-tab-item {{currentTab==0?'actives':''}}" data-current="0" bindtap="clickTab">人才引进
+            <view class="nn {{currentTab==0?'active':''}}"></view>
+        </view>
+        <view class="swiper-tab-item {{currentTab==1?'actives':''}}" data-current="1" bindtap="clickTab">项目引进
+            <view class="nn {{currentTab==1?'active':''}}"></view>
+        </view>
+        <view class="swiper-tab-item {{currentTab==2?'actives':''}}" data-current="2" bindtap="clickTab">其他合作
+            <view class="nn {{currentTab==2?'active':''}}"></view>
+        </view>
+    </view>
+    <view class='gray'></view>
+</view>
+    <swiper current="{{currentTab}}" duration="300" class='cc' style='height:{{Height}}px' bindchange="swiperTab" >
+        <!-- <swiper-item>
+            <scroll-view scroll-y  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" class='scroll_news'>
+                <view class='nation' wx:for='{{docking}}' wx:key='' id='{{item.id}}'>
+                <image src='{{host+item.img}}'></image>
+                <view class='pp'>
+                    <view class='nat_top'>{{item.title}}</view>
+                    <view class='nat_bot'>
+                    {{item.content}}
+                    </view>
+                </view>
+                </view>
+            </scroll-view>
+        </swiper-item> -->
+        <swiper-item>
+            <scroll-view scroll-y  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" class='scroll_news'>
+                <view class='talents' wx:for='{{person}}' wx:key='' id='{{item.id}}'>
+                    <view class='tal_left'>
+                        <image src='{{host+item.img}}'></image>
+                    </view>
+                    <view class='tal_rig'>
+                        <view style='height:50rpx;'>
+                            <text class='tal_name'>{{item.name}}</text>
+                            <text class='tal_year'>{{item.age}}岁</text>
+                        </view>
+                        <view class='xian'></view>
+                        <view class='per_tex'>{{item.content}}</view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-y  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" class='scroll_news'>
+                <view class='share' wx:for='{{project}}' wx:key=''>
+                    <view class='share_left'>
+                        <image src='{{host+item.img}}'></image>
+                    </view>
+                    <view class='share_right'>
+                        <view class='share_right_top'>{{item.name}}</view>
+                        <view class='introduce'>{{item.content}}</view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-y  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" class='scroll_news'>
+                <view class='export' wx:for='{{output}}' wx:key=''>
+                    <view class='extop'>
+                        <text style='color:#257FCB;font-size:20rpx'>●</text>
+                        <text style='margin-left:20rpx'>{{item.title}}</text>
+                    </view>
+                    <view class='ext_tex'>{{item.content}}</view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

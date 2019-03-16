@@ -1,0 +1,54 @@
+<view class='box' id='content' style='height:{{height}}px;width:{{width}}px;padding-left:12px;'>
+    <view class='top' style=''>
+        <view class='top_min' style='height:{{heightb}}px;width:{{widthb}}px'>
+            <view class='brand' style='height:{{heightc}}px;background:#507bc9' bindtap='trade'>
+                <view class='ss'>
+                    <image src='../../image/aa.png'></image>
+                    <view>商标注册</view>
+                </view>
+            </view>
+            <view class='brand' style='height:{{heightc}}px;margin-top:24rpx;background:#50c2c9' bindtap='instition'>
+                <view class='ss'>
+                    <image src='../../image/ggg.png'></image>
+                    <view>服务机构</view>
+                </view>
+            </view> 
+        </view>
+        <view class='top_min' style='margin-left:24rpx;width:{{widthb}}px'>
+            <view class='brand' style='height:{{heightc}}px;background:#b4c950' bindtap='trademark'>
+                <view class='ss'>
+                    <image src='../../image/ee.png'></image>
+                    <view>商标转让</view>
+                </view>
+            </view>
+            <view class='brand' style='height:{{heightc}}px;margin-top:24rpx;background:#50c98c' bindtap='apatent'>
+                <view class='ss'>
+                    <image src='../../image/bb.png'></image>
+                    <view>专利申请</view>
+                </view>
+            </view> 
+        </view>
+    </view>
+    <view class='top' style='margin-top:24rpx;height:{{heightb}}px'>
+        <view class='top_min' style='width:{{widthb}}px'>
+            <view class='brand' style='height:{{heightc}}px;background:#50c98c'>
+                <view class='ss' bindtap="patent">
+                    <image src='../../image/cc.png' style=''></image>
+                    <view>专利转让</view>
+                </view>
+            </view>
+        <view class='brand' style='height:{{heightc}}px;margin-top:24rpx;background:#b4c950'>
+            <view class='ss' bindtap='copyright'>
+                <image src='../../image/fff.png' mode='widthFix'></image>
+                <view>版权登记</view>
+            </view>
+        </view>
+        </view>
+        <view class='top_mind' style='margin-left:24rpx;width:{{widthb}}px' bindtap='aid'>
+            <view class='ss'>
+                <image src='../../image/dd.png'></image>
+                <view>维权援助</view>
+            </view>
+        </view>
+    </view>
+</view>

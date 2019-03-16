@@ -1,0 +1,32 @@
+<view class='new_box'>
+    <view class="swiper-tab">
+        <view class="swiper-tab-item {{currentTab==0?'actives':''}}" data-current="0" bindtap="clickTab" style='margin-left:100rpx'>政策文件
+        <view class="nn {{currentTab==0?'active':''}}"></view>
+        </view>
+        <view class="swiper-tab-item {{currentTab==1?'actives':''}}" data-current="1" bindtap="clickTab" style='margin-right:100rpx'>通知公告
+        <view class="nn {{currentTab==1?'active':''}}"></view>
+        </view>
+    </view>
+    <view class='gray'></view>
+    <swiper current="{{currentTab}}" duration="300" style='height:30rem!important' bindchange="swiperTab" >
+        <swiper-item>
+            <scroll-view scroll-y  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" class='scroll_news'>
+                <view class='change'>
+                    <view wx:for="{{policieList}}" wx:for-index="kk" wx:key='' data-id='{{policieId[kk]}}' bindtap='changePolicie' style="{{policieId[kk] == nowChecked ? 'color:#257fcb':''}}">{{item}}</view>
+                </view>
+                <view class='policy_box'>
+                    <view class='policy' wx:for="{{advertisementList}}" wx:key=''>
+                    <navigator url='../../news/new_detail/new_detail?polices_id={{item.id}}'>
+                        <view class='p_title'>{{item.policy_name}}</view>
+                    </navigator>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" class='scroll_news'>
+            
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

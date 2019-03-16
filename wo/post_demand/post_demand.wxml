@@ -1,0 +1,23 @@
+<view class="containers">
+    <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{items}}" wx:key="" >
+        <view class="content">
+            <view class='collab_min'>
+                <view class='collab_left'>
+                    <image src='{{userinfo.img}}'></image>
+                </view>
+                <view class='collab_right'>
+                    <view class='project_top'>
+                        <view class='project_name'>{{item.company_name}}</view>
+                    </view>
+                    <view class='project_brief'>{{item.content}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="del" catchtap="del" data-id="{{item.id}}" bindtap='del' data-index='{{index}}'>删除</view>
+    </view>
+ </view>
+ <view class='bottom_box' style='width:100%;text-align:center'>
+    <view class='demand_btn' bindtap='my_demand'>
+        +
+    </view>
+</view>

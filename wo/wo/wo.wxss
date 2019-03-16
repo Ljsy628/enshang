@@ -1,0 +1,92 @@
+.mine{
+    height: 100%;
+    width: 100%
+}
+.mine_top{
+    height: 100rpx;
+    width: 94%;
+    padding: 3%;
+    display: flex
+}
+.gray{
+    height: 20rpx;
+    background: #e6e6e6
+}
+.person_toux{
+    width: 20%;
+    display: inline-block;
+}
+.person_toux image{
+    height: 96rpx;
+    width: 96rpx;
+    border-radius: 100%
+}
+.person_name{
+    height: 100rpx;
+    width: 65%;
+    display: inline-block;
+    line-height: 100rpx
+}
+.code_rig{
+    height: 100rpx;
+    width: 5%
+}
+.code_rig image{
+    height: 32rpx;
+    margin-top: 35rpx;
+    width: 20rpx;
+}
+.edit{
+    height: 88rpx;
+    width: 10%;
+    text-align: right;
+    font-size: 25rpx;
+    display: flex
+}
+.edit image{
+    height: 60rpx;
+    width: 60rpx;
+    margin-top: 20rpx
+}
+.person_a{
+    font-size: 30rpx;
+    font-weight: bold
+}
+.person_b{
+    font-size: 28rpx;
+    color: #666
+}
+.mine_bottom{
+    width: 100%;
+}
+.mine_min{
+    width: 96%;
+    padding: 2%;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px #eee solid
+}
+.mine_min image{
+    height: 35rpx;
+    width: 35rpx;
+    margin: 23.5rpx auto
+}
+.mine_pic{
+    width: 15%;
+}
+.mine_cho{
+    width: 75%;
+    text-align: left;
+    font-size: 34rpx;
+    color: #333
+}
+.mine_go{
+    width: 10%;
+}
+.mine_go image{
+     height: 32rpx;
+    width: 20rpx;
+    margin: 25rpx auto
+}

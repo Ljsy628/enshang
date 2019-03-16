@@ -1,0 +1,54 @@
+.big_box{
+    height: 100%;
+    width: 100%;
+}
+.pay_min{
+    height: 70rpx;
+    padding: 2%;
+    line-height: 70rpx;
+    border-bottom: 1px #ccc solid;
+    width: 96%;
+    display: flex;
+    font-size: 30rpx
+}
+.pay_name{
+    width: 25%;
+    display: inline-block;
+}
+.name_inp{
+    width: 70%;
+    display: inline-block;
+}
+.name_inp input{
+    height: 50rpx;
+    margin-top: 10rpx;
+}
+.pay_btn{
+    width: 96%;
+    margin-top: 60%;
+    color: #fff;
+    background: #257FCB
+}
+.choose_money{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.checked_price{
+  background-color: #257FCB;
+  color:#fff !important;
+}
+.money_view{
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: 30rpx;
+    height: 60rpx;
+    width: 20%;
+    border: 1px #257FCB solid;
+    font-size: 28rpx;
+    color: #257FCB;
+    line-height: 60rpx;
+    border-radius: 10rpx;
+    text-align: center
+}

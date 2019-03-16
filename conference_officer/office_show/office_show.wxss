@@ -1,0 +1,41 @@
+.office_box{
+    display: flex;
+    flex-wrap: wrap
+}
+.offic_min{
+    width: 44%;
+    height: 500rpx;
+    box-shadow: 1px 1px 5px #ddd;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+.office_pic{
+    height: 220rpx;
+}
+.office_pic image{
+    height: 100%;
+    width: 100%
+}
+.office_bot{
+    padding: 20rpx;
+    font-size: 28rpx;
+    color: #333
+}
+.office_btn{
+    height: 70rpx;
+    width: 100%;
+    line-height: 70rpx;
+    text-align: center;
+    font-size: 28rpx;
+    float: left;
+    margin: auto;
+    background: #257fcb;
+    color: #fff;
+    margin-top: 40rpx;
+}
+.meetname{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}

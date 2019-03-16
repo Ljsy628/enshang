@@ -1,0 +1,47 @@
+.filldemand{
+    height: 100%;
+    width: 92%;
+    padding: 0 4%;
+}
+.filldemand_min{
+    height: 110rpx;
+    width: 100%;
+    line-height: 110rpx;
+    border-bottom: 1px #eee solid
+}
+.fill_name{
+    float: left;
+    width: 30%;
+    height: 110rpx;
+    line-height: 110rpx;
+    font-size: 32rpx;
+    color: #333
+}
+.fill_inp{
+    float: left;
+    width: 70%;
+    font-size: 34rpx;
+    color: #333
+}
+.fill_inp input{
+    height: 70rpx;
+    width: 100%;
+    margin-top: 20rpx
+}
+.fill_tex{
+    display: inline-block;
+    width: 70%;
+    margin-top: 20rpx；
+    
+}
+.demand_btn{
+    height: 90rpx;
+    width: 90%;
+    background: #257fcb;
+    border: 5px;
+    margin: 50rpx 5%;
+    color: #fff;
+    line-height: 90rpx;
+    text-align: center;
+    font-size: 34rpx;
+}

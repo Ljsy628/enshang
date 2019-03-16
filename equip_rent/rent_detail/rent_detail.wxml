@@ -1,0 +1,37 @@
+<import src="../../wxParse/wxParse.wxml" />
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key=''>
+        <swiper-item>
+            <image src="{{$host+item}}" class="slide-image" />
+        </swiper-item>
+    </block>
+</swiper>
+<view class='equ_data'>
+    <view class='data_top'>
+        <view class='top_name'>
+            <text>{{$data.name}}</text>
+        </view>
+        <view class='top_price'>￥{{$data.price}}</view>
+        <view class='invent'>
+            库存:<text style='margin-left:20rpx;'>{{$data.num}}</text>件
+        </view>
+    </view>
+    <view class='data_middle'>
+        <template is="wxParse" data="{{wxParseData:rentdetails.nodes}}"/>
+    </view>
+    <view class='data_bottom'>
+        <view class='bottom_shop'>
+            <view class='bottom_price'>
+                <view class='price_a'> 合计：</view>
+                <view class='price_tex'>¥<text class='tex_number'>{{$data.price}}</text></view>
+            </view>
+            <view class='shop_num'>
+                <text>购买数量</text>
+                <view class='shop_reduce {{minusStatus}}' bindtap="bindMinus">-</view>
+                <view class='shop_int' bindchange="bindManual">{{num}}</view>
+                <view class='shop_add' bindtap="bindPlus">+</view>
+            </view>
+        </view>
+        <button class='bottom_btn'>立即预约</button>
+    </view>
+</view>

@@ -1,0 +1,114 @@
+.box{
+    height: 100%;
+    width: 100%
+}
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    line-height: 100rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.swiper-tab-item{
+    height: 100%;
+    line-height: 60rpx;
+    margin-top: 30rpx;
+    width: 30%;
+    color: #666666;
+    font-size: 30rpx
+}
+.active{
+    color:#2670cb;
+    border-bottom: 8rpx solid #2670cb;
+    width: 30%;
+    margin: auto;
+    border-radius: 5px
+}
+.actives{
+    color:#2670cb; 
+}
+swiper{
+    width: 93.6%;
+    margin: 0 auto;
+    height: 100vw;
+}
+
+swiper-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gray{
+    height: 20rpx;
+    background: #e6e6e6;
+    margin-top: 20rpx
+}
+.share{
+    width: 100%;
+    padding: 2%;
+    background: #fff;
+    margin-bottom: 20rpx;
+    display: flex;
+    height: 200rpx;
+}
+.share_left{
+    height: 200rpx;
+    width: 30%;
+
+}
+.share_left image{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px
+}
+.share_right{
+    height: 100%;
+    width: 60%;
+    margin-left: 5%;
+}
+.share_right_top{
+    margin-top: 5%;
+    width: 100%;
+    font-size: 30rpx;
+    font-weight: bold;
+    display: flex
+}
+.share_right_top text{
+    width: 80%;
+    display: inline-block
+}
+.share_detail{
+    height: 50rpx;
+    line-height: 50rpx;
+    width: 200rpx;
+    border:1px #257FCB solid;
+    text-align: center;
+    border-radius: 5px;
+    color: #257FCB;
+    font-size: 25rpx;
+    display: inline-block
+}
+.share_right_middle{
+    width: 100%;
+    font-size:30rpx;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    margin-top: 3%;
+    color: #666
+}
+
+.share_right_bottom{
+    margin-top: 3%;
+    font-size: 28rpx;
+    color: #999
+}
+.cc ::-webkit-scrollbar {
+
+  width: 0;
+
+  height: 0;
+
+  color: transparent;
+
+}

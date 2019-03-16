@@ -1,0 +1,302 @@
+.new_box{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+page{
+    height: 100%;
+}
+view{
+    font-family: "苹方";
+}
+.swiper-tab{
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin-bottom: 20rpx;
+    margin-top: 10rpx;
+    position: fixed;
+    top: 0
+
+}
+.swiper-tab-item{
+    height: 60rpx;
+    line-height: 60rpx;
+    width: 25%;
+    color: #666666;
+    font-size: 30rpx;
+    display: inline-block
+}
+.active{
+    color:#2670cb;
+    border-bottom: 8rpx solid #2670cb;
+    width: 30%;
+    margin: auto;
+    border-radius: 5px
+}
+.actives{
+    color:#2670cb; 
+}
+swiper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+swiper-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.scroll_news ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+swiper-item .n-c{
+    display: flex;
+    width: 100%;
+    height: 170rpx;
+    flex-wrap: nowrap;
+    margin-bottom: 30rpx;
+}
+swiper-item .tab-con{
+    width: 70%;
+}
+.tab-c{
+    margin-bottom: 14rpx;
+}
+.tab-con .tab-con-b{
+    font-size: 30rpx;
+    font-weight: bold;
+    width: 70%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.tab-con .tab-con-tim{
+    font-size: 27rpx;
+    color: #cccccc;
+    width: 30%;
+    display: inline-block
+}
+.tab-con .tab-con-con{
+    font-size: 30rpx;
+    color: #666666;
+    height: 80rpx;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    width: 100%
+}
+/* .scroll_news{
+    margin-bottom: 20rpx;
+} */
+.scroll_news ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+.collab_box{
+    background: #fff
+}
+/* 指示图片 */
+.Introduction{
+    height: 200rpx;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: #fff
+}
+.intop{
+    height: 70rpx;
+    width: 100%;
+}
+.inbot{
+    width: 100%
+}
+.introd_name{
+    height: 60rpx;
+    width: 200rpx;
+    position: absolute;
+    z-index: 3;
+    background: #fff;
+    font-size: 32rpx;
+    text-align: center;
+    margin: 48rpx auto;
+    font-weight: bold;
+    left:50%;
+    margin-left:-100rpx;
+    color: #333
+}
+.blue_line{
+    height: 6rpx;
+    width: 55rpx;
+    border-radius: 5rpx;
+    background: #257FCB;
+    margin: auto;
+    margin-top: 40rpx
+}
+.com_English{
+    margin-top: 14rpx;
+    font-size: 20rpx;
+    color: #b7b7b7
+}
+.com_name{
+    height: 60rpx;
+    width: 270rpx;
+    position: absolute;
+    z-index: 333;
+    background: #fff;
+    font-size: 32rpx;
+    text-align: center;
+    margin: 48rpx auto;
+    font-weight: bold;
+    left:50%;
+    margin-left:-135rpx;
+    color: #333
+}
+/* end */
+.collab_min{
+    height: 150rpx;
+    width: 96%;
+    padding: 0 2%
+}
+.collab_left{
+    height: 130rpx;
+    margin-top: 10rpx;
+    width: 30%;
+    float: left
+}
+.collab_left image{
+    height: 130rpx;
+    width: 90%;
+    border-radius: 5px
+}
+.collab_right{
+    height: 130rpx;
+    margin-top: 10rpx;
+    width: 68%;
+    margin-left: 2%;
+    float: left
+}
+.project_top{
+    height: 50rpx;
+}
+.project_name{
+    width: 60%;
+    display: inline-block;
+    font-size: 30rpx;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.source{
+    width: 40%;
+    display: inline-block;
+    font-size: 24rpx;
+    text-align: right;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.project_brief{
+    height: 70rpx;
+    width: 100%;
+    font-size: 26rpx;
+    color: #666;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 2; 
+    overflow: hidden; 
+}
+
+.gray{
+    height: 20rpx;
+    width: 100%;
+    background: #e6e6e6;
+    margin-top: 100rpx
+}
+.demand_min{
+    width: 96%;
+    padding: 0 2%;
+    border-bottom: 1px #eee solid;
+    height: 180rpx
+}
+.demand_left{
+    width: 20%;
+    height: inherit;
+    float: left;
+}
+.demand_left image{
+    height: 100rpx;
+    width: 100rpx;
+    margin-top: 40rpx;
+    border-radius: 100%
+}
+.demand_right{
+    width: 80%;
+    float: left;
+    padding: 40rpx 0;
+}
+.demand_top{
+    width: 100%;
+    height: 40rpx;
+}
+.post_name{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 30rpx;
+    color: #2c2c2c
+}
+.post_time{
+    width: 50%;
+    float: right;
+    font-size: 22rpx;
+    color: #999;
+    text-align: right
+}
+.demand_bot{
+    width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 28rpx;
+    color: #666;
+    float: left;
+    margin-top: 10rpx
+}
+.demand_bots{
+    width: 95%;
+    font-size: 28rpx;
+    color: #666;
+    float: left
+}
+.demand_down{
+    float: left;
+    height: 20rpx;
+    width: 20rpx;
+    
+}
+.demand_down image{
+    display: block;
+    margin-top: 12rpx;
+    height: 20rpx;
+    width: 20rpx
+}
+.hide{
+    display: none
+}
+.achievement:last-child{padding-bottom: 300rpx}
+.demand_min:last-child{border-bottom: none}

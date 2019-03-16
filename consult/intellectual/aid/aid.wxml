@@ -1,0 +1,12 @@
+<view class='instition'>
+    <view class='aptitude_box'>
+        <view class='aptitude_min' wx:for="{{safeguardList}}" wx:key="">
+            <view class='apt_pic'>
+                <image src='{{host+item.thumb}}'></image>
+            </view>
+            <view class='apt_name'>{{item.name}}</view>
+            <view class='apt_detail'>{{item.content}}</view>
+            <button class='apt_btn' bindtap='upload'>在线咨询</button>
+        </view>
+    </view>
+</view>

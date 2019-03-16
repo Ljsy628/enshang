@@ -1,0 +1,43 @@
+ <view class='apply_box'>
+    <view class='basic_info'>
+        <view class='basic_top'>
+            基本信息
+        </view>
+        <view class='basic_inp' style='border-bottom: 1px #E6E6E6 solid;'>
+            <view class='basic_name'>姓名：</view>
+            <input class='basic_input' style='' placeholder='必填'></input>
+        </view> 
+        <view class='basic_inp'>
+            <view class='basic_name'>电话：</view>
+            <input class='basic_input' placeholder='必填'></input>
+        </view>             
+    </view>
+    <view class='company_info' style='margin-top: 20rpx;'>
+        <view class='basic_top'>
+            企业信息
+        </view>
+        <view class='basic_inps'>
+            <view class='basic_name'>企业名称：</view>
+            <input class='basic_input' placeholder='必填'></input>
+        </view> 
+        <view class='basic_inps'>
+            <view class='basic_name'>所在地区：</view>
+            <input class='basic_input'></input>
+        </view>   
+        <view class='basic_inps'>
+            <view class='basic_name'>详细地址：</view>
+            <input class='basic_input' placeholder='必填'></input>
+        </view> 
+        <view class='basic_inps'>
+            <view class='basic_name'>所属行业：</view>
+            <input class='basic_input'></input>
+        </view>   
+        <view class='basic_inps'>
+            <view class='basic_name'>公司电话：</view>
+            <input class='basic_input' placeholder='必填'></input>
+        </view>
+        <view class='basic_infos'>
+            <button class='basic_btn' bindtap='next_btn'>下一步</button>
+        </view>
+    </view>
+</view>

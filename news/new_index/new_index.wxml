@@ -1,0 +1,65 @@
+<view class='new_box'>
+    <!-- banner -->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='home-swiper'>
+        <block wx:for="{{slideshow}}" wx:key=''>
+            <navigator url="../../news/new_detail/new_detail?news_id={{item.id}}">
+                <swiper-item>
+                    <image src="{{host+item.thumb}}" class="slideImage" />
+                </swiper-item>
+            </navigator>
+        </block>
+    </swiper>
+    <view class="news_bot" id="id" bindtouchstart="handletouchtart" bindtouchmove="handletouchmove" duration="300">
+        <view class="swiper-tab">
+            <view class="swiper-tab-item {{currentTab==0?'actives':''}}" data-current="0" bindtap="clickTab" style='margin-left:100rpx'>
+                最热资讯
+                <view class="nn {{currentTab == 0?'active':''}}"></view>
+            </view>
+            <view class="swiper-tab-item {{currentTab==1?'actives':''}}" data-current="1" bindtap="clickTab" style='margin-right:100rpx'>最新资讯
+                <view class="nn {{currentTab==1?'active':''}}"></view>
+            </view>
+        </view>
+        <swiper current="{{currentTab}}" duration="300" style='height:{{Height}}px!important' bindchange="swiperTab">
+            <swiper-item>
+                <scroll-view scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" class='scroll_news'>
+
+                    <view class='news_min' wx:for="{{hot}}" wx:key=''>
+                        <navigator url='../../news/new_detail/new_detail?news_id={{item.id}}'>
+                            <view class='news_left'>
+                                <image src='{{host+item.thumb}}'></image>
+                            </view>
+                            <view class='news_rig'>
+                                <view class='news_title'>
+                                    <view class='news_headline'>{{item.title}}</view>
+                                    <view class='news_date'>{{item.create_time}}</view>
+                                </view>
+                                <view class='news_detail'>
+                                    {{item.describe}}
+                                </view>
+                            </view>
+                        </navigator>
+                    </view>
+                </scroll-view>
+            </swiper-item>
+            <swiper-item>
+                <scroll-view scroll-y style="height: {{Height}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" class='scroll_news'>
+
+                    <view class='news_min' wx:for="{{newmin}}" wx:key=''>
+                        <navigator url='../../news/new_detail/new_detail?news_id={{item.id}}'>
+                            <view class='news_left'>
+                                <image src='{{host+item.thumb}}'></image>
+                            </view>
+                            <view class='news_rig'>
+                                <view class='news_title'>
+                                    <view class='news_headline'>{{item.title}}</view>
+                                    <view class='news_date'>{{item.create_time}}</view>
+                                </view>
+                                <view class='news_detail'>{{item.describe}}</view>
+                            </view>
+                        </navigator>
+                    </view>
+                </scroll-view>
+            </swiper-item>
+        </swiper>
+    </view>
+</view>

@@ -1,0 +1,18 @@
+<view class='share_box'>
+    <view class='share' wx:for='{{$data}}'  bindtap='detail_btn' id="{{item.id}}">
+        <view class='share_left'>
+            <image src='{{item.thumb}}'></image>
+        </view>
+        <view class='share_right'>
+            <view class='share_right_top'>{{item.name}}</view>
+            <view class='share_right_middle'>
+            <text>
+                {{item.describe}}
+            </text>
+            </view>
+            <view class='share_right_bottom'>
+                <view class='share_detail' bindtap='detail_btn' id="{{item.id}}">详情 »</view>
+            </view>
+        </view>
+    </view>
+</view>

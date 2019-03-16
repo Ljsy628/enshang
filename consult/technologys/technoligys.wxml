@@ -1,0 +1,45 @@
+<view class='box'>
+<view style='height:150rpx'>
+    <view class="swiper-tab">
+        <view class="swiper-tab-item {{currentTab==0?'actives':''}}" data-current="0" bindtap="clickTab">高企认定
+            <view class="nn {{currentTab==0?'active':''}}"></view>
+        </view>
+        <view class="swiper-tab-item {{currentTab==1?'actives':''}}" data-current="1" bindtap="clickTab">贯标认定
+            <view class="nn {{currentTab==1?'active':''}}"></view>
+        </view>
+        <view class="swiper-tab-item {{currentTab==2?'actives':''}}" data-current="2" bindtap="clickTab">科技企业
+            <view class="nn {{currentTab==2?'active':''}}"></view>
+        </view>
+    </view>
+    <view class='gray'></view>
+</view>
+    <swiper current="{{currentTab}}" duration="300" class='cc' style='height:{{Height}}px' bindchange="swiperTab" >
+        <swiper-item>
+            <view class='application'>申请流程</view>
+            <view class='app_btn'>
+                <button>申请</button>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <view class='application'>申请流程</view>
+            <view class='app_btn'>
+                <button>申请</button>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <view class='firm-box'>
+                <view class='min-firm' wx:for="{{3}}" wx:key="">
+                    <view class='firm_left'>
+                        <image src='http://ww4.sinaimg.cn/large/006qBWBXjw1f9x67pamjij307s07s74w.jpg'></image>
+                    </view>
+                    <view class='firm_rig'>
+                        <view>科技企业认定</view>
+                        <view>
+                            企业认证时间：<text>2019-1-16</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>
