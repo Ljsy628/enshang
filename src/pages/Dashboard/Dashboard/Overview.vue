@@ -1,18 +1,41 @@
 <template>
   <div>
       <div class="row">
-        <div class="col-xl-3 col-md-6">
-          <stats-card title="150GB" subTitle="Numbers">
-            <div slot="header" class="icon-warning">
-              <i class="nc-icon nc-chart text-warning"></i>
+        <div class="col-xl-4 col-md-6">
+          <div class="mybox1">
+            <div class="mybox1_top">
+              <div class="mybox1_top_left">
+                <span class="nc-icon nc-light-3 text-success"></span>
+              </div>
+              <div class="mybox1_top_right">
+                  <ul>
+                     <li>
+                      <i>可提现</i><span>8888</span>
+                    </li>
+                    
+                      <li>
+                      <i>今日</i><span>88888元</span>
+                    </li>
+                      <li>
+                      <i>昨日</i><span>88888元</span>
+                    </li>
+                    <li>
+                      <i>总计</i><span>888888</span>
+                    </li>
+                     
+                    
+                  </ul>
+              </div>
             </div>
-            <template slot="footer">
-              <i class="fa fa-refresh"></i>Updated now
-            </template>
-          </stats-card>
+            <div class="solid"></div>
+            <div class="mybox1_btm">
+              <span>我的收益</span>
+              <i>详情...</i>
+            </div>
+          </div>
         </div>
 
-        <div class="col-xl-3 col-md-6">
+        <!-- <div class="col-xl-4 col-md-6">
           <stats-card title="$ 1,345" subTitle="Revenue">
             <div slot="header" class="icon-success">
               <i class="nc-icon nc-light-3 text-success"></i>
@@ -21,9 +44,9 @@
               <i class="fa fa-calendar-o"></i>Last day
             </template>
           </stats-card>
-        </div>  
+        </div>   -->
 
-        <div class="col-xl-3 col-md-6">
+        <div class="col-xl-4 col-md-6">
           <stats-card title="23" subTitle="Errors">
             <div slot="header" class="icon-danger">
               <i class="nc-icon nc-vector text-danger"></i>
@@ -34,7 +57,7 @@
           </stats-card>
         </div>
 
-        <div class="col-xl-3 col-md-6">
+        <div class="col-xl-4 col-md-6">
           <stats-card title="+45K" subTitle="Followers">
             <div slot="header" class="icon-info">
               <i class="nc-icon nc-favourite-28 text-primary"></i>
@@ -242,5 +265,16 @@
   }
 </script>
 <style>
-
+.mybox1_btm{width: 100%;height: 100%;display: flex;flex-direction: column;align-items: center;}
+.mybox1_top_right li{display: flex;flex-direction: column;text-decoration: none;list-style: none;align-items:flex-end;}
+.mybox1_top_right ul{display: flex;flex-direction: row;width: 100%;height: auto;padding-left: 0px;justify-content: space-between}
+.mybox1_top_right{width: 360px;padding-top: 10px;    font-family: "Roboto","Helvetica Neue",Arial,sans-serif;}
+i{text-decoration: none;font-style: normal;color: #9a9a9a;font-size: 14px;}
+.mybox1_top_right li span{font-size: 22px;color: #333;font-weight: 300}
+.mybox1{border-radius: 4px;width: 100%;height: 140px;border: 1px solid rgba(0, 0, 0, 0.1);background: #fff;}
+.footer{display: flex;flex-direction: row;align-items: center;text-align: center;}
+.solid{width: 91%;max-width: 476px;height: 1px;display: block;margin: 0px auto;background:rgba(0, 0, 0, 0.125);}
+.mybox1_top{height: 93px;display: flex;flex-direction: row;justify-content: space-around;align-items: center;}
+.mybox1_top_left span{width: 48px;height: 48px;font-size: 48px;padding-left: 20px}
+.mybox1_btm i:hover{color: #f00;cursor: pointer;}
 </style>

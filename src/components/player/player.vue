@@ -2,8 +2,8 @@
   <div>
     <card>
       <div slot="header">
-        <h4 class="card-title">代理管理</h4>
-        <p class="category" @click="openModal('custom')">新增代理+</p>
+        <h4 class="card-title">玩家管理</h4>
+   
         <div class="man_title">
           <div class="col-lg-2">
             <h4 class="title">选择开始时间</h4>
@@ -70,35 +70,36 @@
               <div class="input-group">
                 <label for="searchInput"></label>
                 <i class="nc-icon nc-zoom-split"></i>
-                <input id="searchInput" type="text" value class="form-control" placeholder="搜索">
+                <input id="searchInput" type="text" value class="form-control" placeholder="玩家昵称">
+                
               </div>
             </form>
           </ul>
+             <checkbox class="myckb col-lg-1">只看直属</checkbox>
           <button data-v-015de462 type="button" class="btn btn-wd btn-info mybtn">确定</button>
         </div>
       </div>
 
       <div class="row">
         <div class="col-sm-12 minhi">
-          <el-table :data="tableData"  @row-click="tabclick">
+          <el-table :data="tableData" >
           
  <!-- <el-table-column type="index"></el-table-column> -->
-            <el-table-column prop="name" label="用户名">
-              
-            </el-table-column>
-            <el-table-column prop="proportion" label="分成比例"></el-table-column>
-            <el-table-column prop="employees" label="新增下级"></el-table-column>
-            <el-table-column prop="recharge" label="充值金额"></el-table-column>
-            <el-table-column prop="cash" label="提现金额"></el-table-column>
-            <el-table-column prop="journal" label="流水"></el-table-column>
-            <el-table-column prop="earnings" label="收益"></el-table-column>
-            <el-table-column prop="cash_up" label="可提现"></el-table-column>
-            <el-table-column prop="status" label="状态"></el-table-column>
-            <el-table-column prop="lastLogin" label="最后登陆"></el-table-column>
+            <el-table-column prop="name" label="玩家昵称"></el-table-column>
+            <el-table-column prop="RegistrationTime" label="注册时间"></el-table-column>
+            <el-table-column prop="source" label="来源"></el-table-column>
+            <el-table-column prop="alltopUp" label="总充值"></el-table-column>
+            <el-table-column prop="cash" label="总提现"></el-table-column>
+            <el-table-column prop="CarryingAmount" label="携带金额"></el-table-column>
+            <el-table-column prop="earnings" label="总流水"></el-table-column>
+            <el-table-column prop="gameEarnings" label="电玩总盈亏"></el-table-column>
+            <el-table-column prop="emailStatus" label="绑定邮箱"></el-table-column>
+            <el-table-column prop="lastLogin" label="最后登陆时间"></el-table-column>
+            <el-table-column prop="status" label="账号状态"></el-table-column>
             <el-table-column label="选项">
               <div class="td-actions" slot-scope="props">
                 <a
-                  v-tooltip.top-center="'View Profile'"
+                  v-tooltip.top-center="'查看详情'"
                   class="btn btn-info btn-link btn-xs"
                   href="#"
                   @click="handleLike(props.$index, props.row)"
@@ -106,18 +107,18 @@
                   <i class="fa fa-user"></i>
                 </a>
                 <a
-                  v-tooltip.top-center="'Edit Profile'"
+                  v-tooltip.top-center="'充值记录'"
                   class="btn btn-warning btn-link btn-xs"
                   @click="handleEdit(props.$index, props.row)"
                 >
-                  <i class="fa fa-edit"></i>
+                  <i class="nc-icon nc-paper-2"></i>
                 </a>
                 <a
-                  v-tooltip.top-center="'Delete'"
+                  v-tooltip.top-center="'提现记录'"
                   class="btn btn-danger btn-link btn-xs"
                   @click="handleDelete(props.$index, props.row)"
                 >
-                  <i class="fa fa-close"></i>
+                  <i class="nc-icon nc-support-17"></i>
                 </a>
               </div>
             </el-table-column>
@@ -194,12 +195,18 @@
               >注册</button>
             </div>
           </card>
+          
         </form>
+    
       </el-dialog>
+           <l-pagination class="pagination-no-border fayeqi" :page-count="10" v-model="infoPagination"></l-pagination>
     </div>
+    
   </div>
 </template>
 <script>
+import LPagination from 'src/components/Pagination.vue'
+import { Checkbox, Radio } from 'src/components/index'
 import {
   Table,
   TableColumn,
@@ -212,6 +219,7 @@ import {
 import LSwitch from "src/components/Switch.vue";
 export default {
   components: {
+    Checkbox,
     [DatePicker.name]: DatePicker,
     LSwitch,
     [Table.name]: Table,
@@ -220,6 +228,7 @@ export default {
     [Option.name]: Option,
     [Dialog.name]: Dialog,
     [Slider.name]: Slider,
+    LPagination
   },
   created(){
     this.tableData.map((d,idx)=>{
@@ -229,9 +238,10 @@ export default {
   },
   data() {
     return {
+       infoPagination: 5,
         cTABdata:[[{
           	name: "章三",
-          	proportion: "50%",
+          	proportion: "2019-20-20",
           	employees: "50",
           	active: false,
           	news: "三个",
@@ -346,16 +356,16 @@ export default {
       selects: {
         simple: "",
         countries: [
-          { value: "1", label: "已启用" },
-          { value: "2", label: "未启用" },
-          { value: "3", label: "已停用" }
+          { value: "1", label: "全部" },
+          { value: "2", label: "冻结" },
+          { value: "3", label: "正常" }
         ],
         multiple: "全部"
       },
       selects1: {
         simple: "",
         countries: [
-          { value: "1", label: "已启用" },
+          { value: "1", label: "全部" },
           { value: "2", label: "未启用" },
           { value: "3", label: "已停用" }
         ],
@@ -392,15 +402,15 @@ export default {
       tableData: [
         {
           name: "章三",
-          proportion: "50%",
-          employees: "50",
-          active: false,
-          news: "三个",
-          recharge: "2000",
-          cash: "1000",
-          journal: "2000",
-          earnings: "200",
-          cash_up: "1000",
+          RegistrationTime: "2019-10-10",
+          source: "50",
+          alltopUp: 500,
+          cash: "三个",
+          CarryingAmount: "2000",
+          earnings: "1000",
+          gameEarnings: "2000",
+          emailStatus: "200",
+          lastLogin: "1000",
           status: "正常",
           lastLogin: "2018-12-20",
            
@@ -483,6 +493,8 @@ export default {
 };
 </script>
 <style>
+.fayeqi{float: right;margin-right: 100px}
+.myckb{margin-top: 82px}
 .minhi{
   min-height: 400px
 }
@@ -492,7 +504,8 @@ export default {
   color: #000;
 }
 .mybtn {
-  width: 10%;
+  width: 5% !important;
+  min-width:0px;
   height: 40px;
   margin-top: 74px;
 }

@@ -127,8 +127,8 @@
       <div class="col-md-3">
         <card>
           <div class="card-content text-center">
-            <h5>Custom content</h5>
-            <button class="btn btn-default btn-fill" @click="openModal('custom')">Try me!</button>
+            <h5>要的</h5>
+            <button class="btn btn-default btn-fill" @click="openModal('custom')">点我</button>
           </div>
           <el-dialog
             center
@@ -142,6 +142,9 @@
           </el-dialog>
         </card>
       </div>
+
+
+
       <div class="col-md-3">
         <card>
           <div class="card-content text-center">

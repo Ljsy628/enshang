@@ -163,7 +163,7 @@
       FgInput,
       [DatePicker.name]: DatePicker,
       [TimeSelect.name]: TimeSelect,
-      [Slider.name]: Slider,
+      
       [Tag.name]: Tag,
       [Input.name]: Input,
       [Button.name]: Button,
@@ -172,7 +172,8 @@
       LSwitch,
       LProgress,
       LRadio,
-      LCheckbox
+      LCheckbox,
+      [Slider.name]: Slider,
     },
     data () {
       return {
@@ -255,16 +256,16 @@
       }
     },
     methods: {
-      handleClose (tag) {
-        this.tags.dynamicTags.splice(this.tags.dynamicTags.indexOf(tag), 1)
-      },
+      // handleClose (tag) {
+      //   this.tags.dynamicTags.splice(this.tags.dynamicTags.indexOf(tag), 1)
+      // },
 
-      showInput () {
-        this.tags.inputVisible = true
-        this.$nextTick(() => {
-          this.$refs.saveTagInput.$refs.input.focus()
-        })
-      },
+      // showInput () {
+      //   this.tags.inputVisible = true
+      //   this.$nextTick(() => {
+      //     this.$refs.saveTagInput.$refs.input.focus()
+      //   })
+      // },
 
       handleInputConfirm () {
         let inputValue = this.tags.inputValue

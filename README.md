@@ -27,3 +27,13 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 [CHANGELOG]: ./CHANGELOG.md
 [version-badge]: https://img.shields.io/badge/version-1.0.0-blue.svg
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
+
+# gitlab - ci 
+
+refer https://medium.com/@mattchewone/gitlab-ci-cd-testing-nodejs-app-642734503e47
+
+https://www.exclamationlabs.com/blog/continuous-deployment-to-npm-using-gitlab-ci/
+
+https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
+
+

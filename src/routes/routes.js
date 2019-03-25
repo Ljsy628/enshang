@@ -21,6 +21,7 @@ import Notifications from 'src/pages/Dashboard/Components/Notifications.vue'
 import Icons from 'src/pages/Dashboard/Components/Icons.vue'
 import Typography from 'src/pages/Dashboard/Components/Typography.vue'
 import management from '../components/management/management'
+import player from '../components/player/player'
 // Forms pages
 const RegularForms = () => import('src/pages/Dashboard/Forms/RegularForms.vue')
 const ExtendedForms = () => import('src/pages/Dashboard/Forms/ExtendedForms.vue')
@@ -40,6 +41,10 @@ const VectorMaps = () => import('src/pages/Dashboard/Maps/VectorMapsPage.vue')
 const Calendar = () => import('src/pages/Dashboard/Calendar/CalendarRoute.vue')
 // Charts
 const Charts = () => import('src/pages/Dashboard/Charts.vue')
+// FundManagment pages
+const Bonus = () => import('src/pages/Dashboard/FundManagement/Bonus.vue')
+const BankCardManagement = () => import('src/pages/Dashboard/FundManagement/BankCardManagement.vue')
+const Presentation = () => import('src/pages/Dashboard/FundManagement/Presentation.vue')
 
 let componentsMenu = {
   path: '/components',
@@ -175,6 +180,30 @@ let pagesMenu = {
   ]
 }
 
+let fundmanagementMenu = {
+  path: '/fundmanagement',
+  component: DashboardLayout,
+  redirect: '/fundmanagement/bonus',
+  children: [
+    {
+      path: 'bonus',
+      name: 'bonus pages',
+      component: Bonus
+    },
+    {
+      path: 'bankcardmanagement',
+      name: 'bankcardmanagement pages',
+      component: BankCardManagement
+    },
+    {
+      path: 'presentation',
+      name: 'presentation pages',
+      component: Presentation
+    },
+   
+  ]
+}
+
 let loginPage = {
   path: '/login',
   name: 'Login',
@@ -202,6 +231,7 @@ const routes = [
   formsMenu,
   tablesMenu,
   mapsMenu,
+  fundmanagementMenu,
   pagesMenu,
   loginPage,
   registerPage,
@@ -211,6 +241,11 @@ const routes = [
     component: DashboardLayout,
     redirect: '/admin/overview',
     children: [
+      {
+        path:"player",
+        name:"player",
+        component:player
+      },
       {
         path:"management",
         name:"management",

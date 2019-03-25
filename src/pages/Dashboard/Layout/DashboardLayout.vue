@@ -5,13 +5,13 @@
       <user-menu></user-menu>
       <mobile-menu></mobile-menu>
       <template slot-scope="props" slot="links">
-        <sidebar-item :link="{name: 'Dashboard', icon: 'nc-icon nc-chart-pie-35', path: '/admin/overview'}">
+        <sidebar-item :link="{name: '首页', icon: 'nc-icon nc-istanbul', path: '/admin/overview'}">
         </sidebar-item>
-           <sidebar-item :link="{name: '代理管理', icon: 'nc-icon nc-single-copy-04', path: '/admin/management'}">
-        </sidebar-item>
+           <sidebar-item :link="{name: '代理管理', icon: 'nc-icon nc-single-copy-04', path: '/admin/management'}"></sidebar-item>
+           <sidebar-item :link="{name: '玩家管理', icon: 'nc-icon nc-alien-33', path: '/admin/player'}"></sidebar-item>
         <sidebar-item :link="{name: 'Components', icon: 'nc-icon nc-app'}">
           <sidebar-item :link="{name: 'Buttons', path: '/components/buttons'}"></sidebar-item>
-          <sidebar-item :link="{name: '中文吧这谁顶得住啊', path: '/components/grid-system'}"></sidebar-item>
+          <sidebar-item :link="{name: '侧边框', path: '/components/grid-system'}"></sidebar-item>
           <sidebar-item :link="{name: 'Panels', path: '/components/panels'}"></sidebar-item>
           <sidebar-item :link="{name: 'Sweet Alert', path: '/components/sweet-alert'}"></sidebar-item>
           <sidebar-item :link="{name: 'Notifications', path: '/components/notifications'}"></sidebar-item>
@@ -34,6 +34,12 @@
           <sidebar-item :link="{name: 'Google Maps', path: '/maps/google'}"></sidebar-item>
           <sidebar-item :link="{name: 'Full Screen Maps', path: '/maps/full-screen'}"></sidebar-item>
           <sidebar-item :link="{name: 'Vector Maps', path: '/maps/vector-map'}"></sidebar-item>
+        </sidebar-item>
+        <!-- 资金管理 -->
+        <sidebar-item :link="{name: '资金管理', icon: 'nc-icon nc-money-coins'}">
+          <sidebar-item :link="{name: '我的分红', path: '/fundmanagement/bonus'}"></sidebar-item>
+          <sidebar-item :link="{name: '银行卡管理', path: '/fundmanagement/bankcardmanagement'}"></sidebar-item>
+          <sidebar-item :link="{name: '我的提现', path: '/fundmanagement/presentation'}"></sidebar-item>
         </sidebar-item>
         <sidebar-item :link="{name: 'Charts', icon: 'nc-icon nc-chart-bar-32', path: '/admin/charts'}"></sidebar-item>
         <sidebar-item :link="{name: 'Calendar', icon: 'nc-icon nc-single-copy-04', path: '/admin/calendar'}"></sidebar-item>
